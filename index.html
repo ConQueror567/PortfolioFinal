@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shrihari's portfolio website showcasing backend development skills, projects, and services.">
+    <meta name="keywords" content="Shrihari, Backend Developer, RESTful APIs, Spring Boot, MySQL, MongoDB">
+    <title>Shrihari's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/19a1997df5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ---------------header---------------- -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Back-End Developer</p>
+                <h1>Hi, I'm <span>Shrihari</span><br>From India</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- ---------------about---------------- -->
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="about.jpeg" alt="About Shrihari" loading="lazy">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>I am Shrihari, currently pursuing a Diploma in Computer Science at KPT Mangalore. I specialize in backend development with a strong foundation in Spring Boot and MySQL. I'm proficient in building RESTful APIs and integrating databases. In addition, I have experience with frontend technologies like React to create full-stack applications. My background in computer hardware complements my software skills, allowing me to solve a variety of technical challenges.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Backend Development</span><br>Designing RESTful APIs</li>
+                                <li><span>Database Management</span><br>Working with MySQL and MongoDB</li>
+                                <li><span>System Integration</span><br>Building scalable backend systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -----------portfolio----------- -->
+        <section id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="work-1.png" alt="Social Media API" loading="lazy">
+                        <div class="layer">
+                            <h3>RESTful API for Social Media Platform</h3>
+                            <p>Designed and implemented the backend system for a social media app, enabling seamless user interactions and content management. Built with Spring Boot and integrated with MySQL.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-2.png" alt="Media Streaming Backend" loading="lazy">
+                        <div class="layer">
+                            <h3>Backend for Media Streaming Service</h3>
+                            <p>Developed the API and database architecture for a media streaming app, supporting high-quality content delivery and user engagement. Utilized Node.js and MongoDB.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-3.png" alt="E-Commerce Backend" loading="lazy">
+                        <div class="layer">
+                            <h3>Backend for E-Commerce Platform</h3>
+                            <p>Built and deployed the backend for an online shopping app, managing product listings, user transactions, and payment processing. Integrated with third-party APIs and MySQL.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </section>
+
+        <!-- -----------services----------- -->
+        <section id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-server"></i>
+                        <h2>Backend Development</h2>
+                        <p>Building and maintaining the server-side logic, APIs, and databases for websites and applications. Focused on ensuring efficient and scalable solutions.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Database Management</h2>
+                        <p>Specialized in designing, managing, and optimizing databases to ensure smooth data handling for web and mobile applications. Expertise in MySQL and MongoDB.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                        <h2>API Development</h2>
+                        <p>Developing secure and efficient RESTful APIs to enable seamless communication between client-side and server-side applications. Expertise in Spring Boot and Node.js.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------contact me------------------>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> shriharik180@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +91-9036779624</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="#" class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copywrite">
+                <p>Copyright &#169; Shrihari. Website <i class="fa-solid fa-globe"></i> Made By Shrihari</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
